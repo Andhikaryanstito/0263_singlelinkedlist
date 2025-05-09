@@ -137,4 +137,15 @@ int main()
         }
         break;
     }
+        case '2':
+        {
+            if (mhs.listEmpty())
+            {
+                cout << "\nList Kosong\n";
+                break;
+            }
+            cout << "\nMasukkan nomor mahasiswa yang akan dihapus: ";
+            cin >> nim;
+        }
+    }
 }
