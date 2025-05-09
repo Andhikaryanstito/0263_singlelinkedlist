@@ -130,22 +130,23 @@ int main()
              << "Masukkan pilihan (1-5):";
         cin >> ch;
               switch (ch)
-        {
+               {
         case '1':
-        {
             mhs.addNode();
-        }
-        break;
-    }
+            break;
+
         case '2':
-        {
             if (mhs.listEmpty())
             {
                 cout << "\nList Kosong\n";
                 break;
             }
-            cout << "\nMasukkan nomor mahasiswa yang akan dihapus: ";
+            cout << "\nMasukkan NIM yang akan dihapus: ";
             cin >> nim;
-        }
+            if (mhs.delNode(nim) == false)
+                cout << "\nData tidak ditemukan\n";
+            else
+                cout << "\nData dengan NIM " << nim << " berhasil dihapus\n";
+            break;
     }
-}
+};
