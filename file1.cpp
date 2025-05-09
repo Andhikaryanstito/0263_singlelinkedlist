@@ -148,5 +148,11 @@ int main()
             else
                 cout << "\nData dengan NIM " << nim << " berhasil dihapus\n";
             break;
+                    case '3':
+        {
+            mhs.traverse();
+        }
+        break;
+
     }
 };
