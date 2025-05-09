@@ -62,4 +62,9 @@ public:
     }
     return (current != NULL);
 }
+bool listEmpty()
+{
+    return (START == NULL);
+}
+
 };
