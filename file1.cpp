@@ -75,5 +75,10 @@ bool delNode(int nim)
     {
         START = START->next;
     }
+        else
+    {
+        previous->next = current->next;
+    }
+
 }
 };
