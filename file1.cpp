@@ -66,5 +66,10 @@ bool listEmpty()
 {
     return (START == NULL);
 }
+bool delNode(int nim)
+{
+    Node *current, *previous;
+    if (!Search(nim, previous, current))
+        return false;
 
 };
