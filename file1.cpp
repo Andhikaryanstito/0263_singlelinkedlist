@@ -78,7 +78,19 @@ bool delNode(int nim)
         else
     {
         previous->next = current->next;
+        delete current;
+        return true;
     }
-
+void traverse()
+{
+    if (!listEmpty())
+    {
+        cout << "\nData dalam list adalah:\n";
+        Node *currentNode = START;
+        while (currentNode != NULL)
+        {
+            cout << currentNode->noMhs << " ";
+            currentNode = currentNode->next;
+        }
 }
 };
